@@ -42,11 +42,11 @@ section > div {
 }
 
 section:nth-of-type(odd) div {
-  margin-left: 18%;
+  margin-left: 300px;
 }
 
 section:nth-of-type(even) div {
-  margin-right: 18%;
+  margin-right: 300px;
 }
 
 section > div h2 {
@@ -57,7 +57,7 @@ section > div span {
 }
 
 section > figure {
-  width: 50%;
+  width: 800px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -100,6 +100,8 @@ section:nth-of-type(2) figure div {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+  left: 150px;
 }
 
 section:nth-of-type(2) figure div > img:nth-of-type(1) {
@@ -123,4 +125,37 @@ figcaption {
 figcaption > span {
   font-weight: normal;
   color: rgb(75, 102, 255);
+}
+
+@media only screen and (max-width: 1300px) {
+  section {
+    height: 800px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  section:nth-of-type(even) {
+    flex-direction: column;
+  }
+  section > div {
+    width: 60%;
+  }
+
+  section:nth-of-type(odd) div {
+    margin-left: 0px;
+  }
+
+  section:nth-of-type(even) div {
+    margin-right: 0px;
+  }
+
+  section:nth-of-type(2) figure {
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  section:nth-of-type(2) figure > div {
+    left: 0px;
+  }
 }
