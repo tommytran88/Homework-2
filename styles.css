@@ -146,6 +146,14 @@ figcaption > span {
     margin-left: 0px;
   }
 
+  section:nth-of-type(1) figure {
+    margin-bottom: 200px;
+  }
+
+  section > * {
+    position: relative;
+  }
+
   section:nth-of-type(even) div {
     margin-right: 0px;
   }
@@ -162,5 +170,11 @@ figcaption > span {
   section figure {
     justify-content: center;
     align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  section:nth-of-type(2) {
+    height: 140vh;
   }
 }
