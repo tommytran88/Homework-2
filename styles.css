@@ -165,16 +165,33 @@ figcaption > span {
 
   section:nth-of-type(2) figure > div {
     left: 0px;
+    min-width: 350px;
   }
 
   section figure {
+    width: 60%;
+    /*height: auto; */
     justify-content: center;
     align-items: flex-start;
   }
+  section:nth-of-type(odd) figure > img {
+    height: auto;
+    width: 100%;
+    min-width: 400px;
+  }
+
+  /* section:nth-of-type(2) figure div {
+    height: auto;
+    width: 50%;
+  } */
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
+  section > div {
+    width: 90%;
+  }
+
   section:nth-of-type(2) {
-    height: 140vh;
+    height: 130vh;
   }
 }
